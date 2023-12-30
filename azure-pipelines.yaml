@@ -36,6 +36,8 @@ stages:
         echo 'api_type: azure' >> azure_openai_connection.yaml
         echo "api_version: \"2023-05-15\"" >> azure_openai_connection.yaml
       displayName: 'Create Azure OpenAI Connection File'
+      env:
+        AZURE_OPENAI_API_KEY: $(AZURE_OPENAI_API_KEY)
     - script: pf connection create --file azure_openai_connection.yaml
     - script: |
         pf run create --file evals/summerize_flow/run.yaml --stream --name summerize_flow
