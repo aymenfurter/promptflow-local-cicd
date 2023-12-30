@@ -43,6 +43,8 @@ stages:
         pf run create --file evals/summerize_flow/run.yaml --stream --name summerize_flow
         pf run create --file evals/groundedness_eval_flow/run.yaml --run summerize_flow --stream --name groundedness_eval_flow
       displayName: 'Run PromptFlow Commands'
+      env:
+        AZURE_OPENAI_API_KEY: $(AZURE_OPENAI_API_KEY)
     - script: |
         pf run visualize --name groundedness_eval_flow
         mv /tmp/*.html $(Build.ArtifactStagingDirectory)/
