@@ -30,7 +30,7 @@ nodes:
     type: code
     path: groundedness_score.jinja2
   inputs:
-    text: ${inputs.document}
+    text: ${inputs.text}
     summary: ${inputs.summary}
     max_tokens: 256
     temperature: 0
