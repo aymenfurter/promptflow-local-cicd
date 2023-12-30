@@ -35,7 +35,7 @@ nodes:
     max_tokens: 256
     temperature: 0
     deployment: gpt-4
-  connection: openai_connection
+  connection: azure_openai_connection
   api: chat
 - name: concat_scores
   type: python
