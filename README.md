@@ -1,14 +1,10 @@
-# Running PromptFlow Evaluations Directly On ADO Agents
+# Integrate PromptFlow into Your CI/CD pipeline (On-Agent)
 
 ## Overview
+> [!Note]
+> This sample demonstrates adding PromptFlow evaluations in existing Python applications, including LangChain and others like Semantic Kernel's Python version. At present, it directly runs PromptFlow on the agent. It's ideal for smaller applications with an established deployment setup, looking to use PromptFlow solely for evaluation purposes. If you are looking for an end-to-end solution using PromptFlow, I recommend exploring the [LLMOps template repository on GitHub.](https://github.com/microsoft/llmops-promptflow-template/)
 
-Every AI application should include thorough evaluations! With PromptFlow, we ensure not only the functional correctness of our code but also the precision and reliability of AI inferences, preventing issues like hallucinations.
-
-For a comprehensive, large-scale solution, refer to the llmops promptflow template, an extensive resource perfect for scalable PromptFlow evaluations. [llmops promptflow template](https://github.com/microsoft/llmops-promptflow-template/tree/main).
-
-This repository demonstrates the ease of integrating PromptFlow evaluations into existing LangChain-based applications, providing a straightforward and simple example. At present, it directly runs PromptFlow on the agent.
-
-For more information about PromptFlow, visit the [PromptFlow documentation](https://microsoft.github.io/promptflow/) and the [main PromptFlow GitHub repository](https://github.com/microsoft/promptflow). Learn more about Azure Machine Learning PromptFlow in this [overview article](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2).
+Every AI app should include evals! With [PromptFlow](https://microsoft.github.io/promptflow/), we ensure not only the functional correctness of our code but also the precision and reliability of AI inferences, preventing issues like hallucinations. For more information about PromptFlow, visit the [PromptFlow documentation](https://microsoft.github.io/promptflow/) and the [GitHub repository](https://github.com/microsoft/promptflow). 
 
 
 ## Getting Started with this Sample 🛠️
