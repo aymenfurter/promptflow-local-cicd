@@ -1,6 +1,4 @@
 # Integrate PromptFlow into Your CI/CD pipeline (On-Agent)
-
-## Overview
 > [!Note]
 > This sample demonstrates adding PromptFlow evaluations in existing Python applications, including LangChain and others like Semantic Kernel's Python version. At present, it directly runs PromptFlow on the agent. It's ideal for smaller applications with an established deployment setup, looking to use PromptFlow solely for evaluation purposes. If you are looking for an end-to-end solution using PromptFlow, I recommend exploring the [LLMOps template repository on GitHub.](https://github.com/microsoft/llmops-promptflow-template/)
 
