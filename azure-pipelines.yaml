@@ -38,8 +38,8 @@ stages:
       displayName: 'Create Azure OpenAI Connection File'
     - script: pf connection create --file azure_openai_connection.yaml
     - script: |
-        pf run create --file evals/groundedness_eval_flow/run.yaml --stream --name groundedness_eval_flow
-        pf run create --file evals/summerize_flow/run.yaml --run summary-run --stream --name summerize_flow
+        pf run create --file evals/summerize_flow/run.yaml --stream --name summerize_flow
+        pf run create --file evals/groundedness_eval_flow/run.yaml --run summerize_flow --stream --name groundedness_eval_flow
       displayName: 'Run PromptFlow Commands'
     - script: |
         pf run visualize --name groundedness_eval_flow
