@@ -34,7 +34,7 @@ stages:
         echo "api_key: \"$(AZURE_OPENAI_API_KEY)\"" >> azure_openai_connection.yaml
         echo "api_base: \"$(AZURE_OPENAI_ENDPOINT)\"" >> azure_openai_connection.yaml
         echo 'api_type: azure' >> azure_openai_connection.yaml
-        echo "api_version: \"$(AZURE_OPENAI_API_VERSION)\"" >> azure_openai_connection.yaml
+        echo "api_version: \"2023-05-15\"" >> azure_openai_connection.yaml
       displayName: 'Create Azure OpenAI Connection File'
     - script: pf connection create --file azure_openai_connection.yaml
     - script: |

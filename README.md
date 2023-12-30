@@ -2,10 +2,9 @@
 
 ## Overview
 
-Every AI application project should include thorough evaluations! With PromptFlow, we enable the creation of automated tests that surpass traditional unit testing capabilities. This approach ensures not only the functional correctness of our code but also the precision and reliability of AI inferences, preventing issues like hallucinations.
+Every AI application should include thorough evaluations! With PromptFlow, we ensure not only the functional correctness of our code but also the precision and reliability of AI inferences, preventing issues like hallucinations.
 
-There are two main strategies for running PromptFlow evaluations:
-- **Full Solution at Scale:** For a comprehensive, large-scale solution, refer to the llmops promptflow template, an extensive resource perfect for scalable PromptFlow evaluations. [llmops promptflow template](https://github.com/microsoft/llmops-promptflow-template/tree/main).
+For a comprehensive, large-scale solution, refer to the llmops promptflow template, an extensive resource perfect for scalable PromptFlow evaluations. [llmops promptflow template](https://github.com/microsoft/llmops-promptflow-template/tree/main).
 
 This repository demonstrates the ease of integrating PromptFlow evaluations into existing LangChain-based applications, providing a straightforward and simple example. At present, it directly runs PromptFlow on the agent.
 

@@ -7,4 +7,4 @@ import summarizer
 
 @tool
 def test_summarize(text: str) -> str:
-    return summarizer.summerize_text(text)
+    return summarizer.summarize_text(text)
