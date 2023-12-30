@@ -22,7 +22,7 @@ stages:
     - task: UsePythonVersion@0
       inputs:
         versionSpec: $(PYTHON_VERSION)
-      displayName: 'PythoN Setup'
+      displayName: 'Python Setup'
     - script: |
         pip install -r evals/requirements.txt
         pip install keyrings.alt
